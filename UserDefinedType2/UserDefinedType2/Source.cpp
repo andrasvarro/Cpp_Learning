@@ -1,4 +1,5 @@
 #include "Tweeter.h"
+#include "Status.h"
 #include <iostream>
 int main()
 {
@@ -11,6 +12,15 @@ int main()
     std::cout << "after innermost block" << std::endl;
 
     std::string name = p1.getName();
+
+    Status s = Pending;
+    s = Approved;
+    
+    FileError fe = FileError::notfound;
+    fe = FileError::ok;
+
+    NetworkError ne = NetworkError::disconnected;
+    ne = NetworkError::ok;
 
     return 0;
 }
