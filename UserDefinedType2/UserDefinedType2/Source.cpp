@@ -1,10 +1,15 @@
 #include "Person.h"
-
+#include <iostream>
 int main()
 {
-	Person p1("Andras", "Varro", 5);
-	Person p2;
-	std::string name = p1.getName();
+    Person p1("A", "V", 5);
+    {
+        Person p2;
+    }
+    
+    std::cout << "after innermost block" << std::endl;
 
-	return 0;
+    std::string name = p1.getName();
+
+    return 0;
 }
