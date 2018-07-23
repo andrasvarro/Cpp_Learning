@@ -1,10 +1,11 @@
-#include "Person.h"
+#include "Tweeter.h"
 #include <iostream>
 int main()
 {
-    Person p1("A", "V", 5);
+    Person p1("Andras", "Varro", 123);
     {
-        Person p2;
+        Tweeter t1("Someone", "Else", 456, "@whoever");
+        std::string name2 = t1.getName();
     }
     
     std::cout << "after innermost block" << std::endl;
